@@ -1,0 +1,107 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-13T14:20:38.909Z",
+        "before": [
+          {
+            "result": {
+              "duration": 380000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.PetStore.stepDefs.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "As user I should able to get the pets by status",
+        "description": "",
+        "id": "get-the-pets-by-status;as-user-i-should-able-to-get-the-pets-by-status",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1857000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I get a pets that exist in the store by \"status\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.PetStore.stepDefs.PetDetailsStepDefs.i_get_a_pets_that_exist_in_the_store_by(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Response data status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "com.PetStore.stepDefs.PetDetailsStepDefs.response_data_status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 272000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Response pets status shoud be \"name\" is \"doggie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"doggie\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.PetStore.stepDefs.PetDetailsStepDefs.response_pets_status_shoud_be_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getPet"
+          }
+        ]
+      }
+    ],
+    "name": "Get the pets by status",
+    "description": "",
+    "id": "get-the-pets-by-status",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/petSevericeTest.feature",
+    "tags": [
+      {
+        "name": "@getPet",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
